@@ -15,9 +15,9 @@ Thank you to the following repos for generating and publishing many of these.
 - [threatexpress](https://github.com/threatexpress/malleable-c2)
 - [yeyintminthuhtut](https://github.com/yeyintminthuhtut/Malleable-C2-Profiles-Collection)
 - [bluscreenofjeff](https://github.com/bluscreenofjeff/MalleableC2Profiles)
-- [skgray](https://github.com//Malleable-C2)
 - [mhaskar](https://github.com/mhaskar/MalleableC2-Profiles)
 
 ## Documentation
 - [A Deep Dive into Cobalt Strike Malleable C2](https://posts.specterops.io/a-deep-dive-into-cobalt-strike-malleable-c2-6660e33b0e0b)
-- [Malleable C2 Documenation](https://www.cobaltstrike.com/help-malleable-c2)
+- [Malleable C2 Documentation](https://www.cobaltstrike.com/help-malleable-c2)
+- [Empire: Malleable C2 Profiles](https://www.bc-security.org/post/empire-malleable-c2-profiles/)
