@@ -16,6 +16,7 @@ Thank you to the following repos for generating and publishing many of these.
 - [yeyintminthuhtut](https://github.com/yeyintminthuhtut/Malleable-C2-Profiles-Collection)
 - [bluscreenofjeff](https://github.com/bluscreenofjeff/MalleableC2Profiles)
 - [mhaskar](https://github.com/mhaskar/MalleableC2-Profiles)
+- [kphongagsorn](https://github.com/kphongagsorn/c2-profiles)
 
 ## Documentation
 - [A Deep Dive into Cobalt Strike Malleable C2](https://posts.specterops.io/a-deep-dive-into-cobalt-strike-malleable-c2-6660e33b0e0b)
