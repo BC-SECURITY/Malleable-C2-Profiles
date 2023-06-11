@@ -33,7 +33,7 @@ http-get {
         
         metadata {
             netbios;
-	    parameter "id";
+	        parameter "id";
 
         }
 
@@ -41,24 +41,20 @@ http-get {
 
     server {
 
-	header "Server" "Apache/2.2.22 (Debian)";
-	header "X-Powered-By" "PHP/5.4.45-0+deb7u14";
-	header "Pragma" "no-cache";
-	header "Set-Cookie" "lang=en; expires=Sat, 08-Dec-2018 15:50:58 GMT; path=/; domain=.jititliste.com; id=";
-	header "Vary" "Accept-Encoding";
-	header "Keep-Alive" "timeout=5, max=100";	
-	header "Connection" "Keep-Alive";	
-	header "Content-Type" "text/html";
-	
-	
-	
-	
+        header "Server" "Apache/2.2.22 (Debian)";
+        header "X-Powered-By" "PHP/5.4.45-0+deb7u14";
+        header "Pragma" "no-cache";
+        header "Set-Cookie" "lang=en; expires=Sat, 08-Dec-2018 15:50:58 GMT; path=/; domain=.jititliste.com; id=";
+        header "Vary" "Accept-Encoding";
+        header "Keep-Alive" "timeout=5, max=100";
+        header "Connection" "Keep-Alive";
+        header "Content-Type" "text/html";
         
 #using newline ("\n") shows as a period (".") in c2lint, but looks correct in wireshark.
         output {
 
             netbios;
-	    prepend "1faa\n";
+	        prepend "1faa\n";
             print;
 	    
         }
@@ -78,18 +74,13 @@ http-post {
         
         output {
             netbios;	    
-	    prepend "PHPSESSID=";      
-	    header "Cookie";
-
-
+	        prepend "PHPSESSID=";
+	        header "Cookie";
         }
 
 
         id {
-	    netbios;
-	    parameter "";
-	
-
+	        netbios;
         }
     }
 
@@ -104,10 +95,10 @@ http-post {
 
         output {
             netbios;
-	    prepend ".";
-	    prepend "..NPyo=....\n";	    
-	    append ".......... .......... ..........";
- 	    print;
+            prepend ".";
+            prepend "..NPyo=....\n";
+            append ".......... .......... ..........";
+            print;
         }
     }
 }

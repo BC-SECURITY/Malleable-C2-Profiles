@@ -7,7 +7,7 @@
 set sample_name "Meterpreter";
 
 # 100ms sleep time.
-set sleeptime "100";
+set sleeptime "1000";
 
 # what else would we spawn to?
 set spawnto_x86 "%windir%\\syswow64\\notepad.exe";

