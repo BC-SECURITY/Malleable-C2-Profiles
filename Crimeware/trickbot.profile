@@ -49,8 +49,8 @@ http-get {
             prepend "<hr><center>nginx</center>";
             prepend "</body>";
             prepend "</html>";
-            prepend "<!CDATA['=";
-            append "']>";
+            prepend "<!CDATA[\'=";
+            append "\']>";
             append "</html>";
             print;
         }
@@ -78,7 +78,7 @@ http-post {
         
         id {
             base64url;
-	    header "Cookie";
+	        header "Cookie";
 
         }
     }
@@ -103,7 +103,7 @@ http-stager {
         header "Server" "nginx";
         header "Date" "Fri, 30 Jun 2017 13:08:47 GMT";
         header "Content-Type" "text/html; charset=utf-8";        
-	header "Connection" "keep-alive";
+	    header "Connection" "keep-alive";
     
     }
 

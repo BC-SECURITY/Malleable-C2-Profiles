@@ -92,8 +92,8 @@ http-get {
             append "</div>";
             append "<div id=\"notifications_dismiss_banner\" class=\"banner seafoam_green_bg hidden\">";
             append "We strongly recommend enabling desktop notifications if you’ll be using Slack on this computer.<span class=\"inline_block no_wrap\">";
-            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button> •";
-            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button> •";
+            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button>";
+            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button>";
             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
             append "</span>";
             append "</div>";
