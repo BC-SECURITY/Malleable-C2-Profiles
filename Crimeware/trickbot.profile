@@ -49,8 +49,8 @@ http-get {
             prepend "<hr><center>nginx</center>";
             prepend "</body>";
             prepend "</html>";
-            prepend "<!CDATA[\'=";
-            append "\']>";
+            prepend "<!CDATA['=";
+            append "']>";
             append "</html>";
             print;
         }
@@ -68,9 +68,9 @@ http-post {
         output {
             netbios; 
             prepend "----ZMZTCR";
-            prepend "Content-Disposition: form-data;name=\'sourcelink\'";
+            prepend "Content-Disposition: form-data;name=\"sourcelink\"";
 
-            append " Content-Disposition: form-data;name=\'sourcequery\'";
+            append " Content-Disposition: form-data;name=\"sourcequery\"";
             append "----ZMZTCR";
             print;
         }
@@ -96,16 +96,4 @@ http-post {
             print;
         }
     }
-}
-
-http-stager {
-    server {
-        header "Server" "nginx";
-        header "Date" "Fri, 30 Jun 2017 13:08:47 GMT";
-        header "Content-Type" "text/html; charset=utf-8";        
-	    header "Connection" "keep-alive";
-    
-    }
-
-
 }

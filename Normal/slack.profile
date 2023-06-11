@@ -72,31 +72,31 @@ http-get {
 
             base64url;
 
-            prepend "<!DOCTYPE html>";
-            prepend "<html lang=\"en-US\" class=\"supports_custom_scrollbar\">";
-            prepend "<head>";
-            prepend "<meta charset=\"utf-8\">";
-            prepend "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">";
-            prepend "<meta name=\"referrer\" content=\"no-referrer\">";
-            prepend "<meta name=\"superfish\" content=\"nofish\">";
-            prepend "<title>Microsoft Developer Chat Slack</title>";
-            prepend "<meta name=\"author\" content=\"Slack\">";
-            prepend "<link rel=\"dns-prefetch\" href=\"https://a.slack-edge.com?id=";
-
-	        append "\"> </script>";
-	        append "<div id=\"client-ui\" class=\"container-fluid sidebar_theme_\"\"\">";
-            append "<div id=\"banner\" class=\"hidden\" role=\"complementary\" aria-labelledby=\"notifications_banner_aria_label\">";
-            append "<h1 id=\"notifications_banner_aria_label\" class=\"offscreen\">Notifications Banner</h1>";
-            append "<div id=\"notifications_banner\" class=\"banner sk_fill_blue_bg hidden\">";
-            append "Slack needs your permission to <button type=\"button\" class=\"btn_link\">enable desktop notifications</button>.<button type=\"button\" class=\"btn_unstyle banner_dismiss ts_icon ts_icon_times_circle\" data-action=\"dismiss_banner\" aria-label=\"Dismiss\"></button>";
-            append "</div>";
-            append "<div id=\"notifications_dismiss_banner\" class=\"banner seafoam_green_bg hidden\">";
-            append "We strongly recommend enabling desktop notifications if you’ll be using Slack on this computer.<span class=\"inline_block no_wrap\">";
-            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button>";
-            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button>";
-            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
-            append "</span>";
-            append "</div>";
+#             prepend "<!DOCTYPE html>";
+#             prepend "<html lang=\"en-US\" class=\"supports_custom_scrollbar\">";
+#             prepend "<head>";
+#             prepend "<meta charset=\"utf-8\">";
+#             prepend "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">";
+#             prepend "<meta name=\"referrer\" content=\"no-referrer\">";
+#             prepend "<meta name=\"superfish\" content=\"nofish\">";
+#             prepend "<title>Microsoft Developer Chat Slack</title>";
+#             prepend "<meta name=\"author\" content=\"Slack\">";
+#             prepend "<link rel=\"dns-prefetch\" href=\"https://a.slack-edge.com?id=";
+#
+# 	        append "\"> </script>";
+# 	        append "<div id=\"client-ui\" class=\"container-fluid sidebar_theme_\"\"\">";
+#             append "<div id=\"banner\" class=\"hidden\" role=\"complementary\" aria-labelledby=\"notifications_banner_aria_label\">";
+#             append "<h1 id=\"notifications_banner_aria_label\" class=\"offscreen\">Notifications Banner</h1>";
+#             append "<div id=\"notifications_banner\" class=\"banner sk_fill_blue_bg hidden\">";
+#             append "Slack needs your permission to <button type=\"button\" class=\"btn_link\">enable desktop notifications</button>.<button type=\"button\" class=\"btn_unstyle banner_dismiss ts_icon ts_icon_times_circle\" data-action=\"dismiss_banner\" aria-label=\"Dismiss\"></button>";
+#             append "</div>";
+#             append "<div id=\"notifications_dismiss_banner\" class=\"banner seafoam_green_bg hidden\">";
+#             append "We strongly recommend enabling desktop notifications if you’ll be using Slack on this computer.<span class=\"inline_block no_wrap\">";
+#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button>";
+#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button>";
+#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
+#             append "</span>";
+#             append "</div>";
 
             print;
         }
@@ -123,6 +123,8 @@ http-post {
             prepend "_ga=GA1.2.875;";
             prepend "b=.12vPkW22o;";
             header "Cookie";
+
+            print;
 
         }
 

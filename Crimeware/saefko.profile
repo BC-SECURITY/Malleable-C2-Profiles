@@ -67,7 +67,6 @@ http-post {
         
         output {
             base64;
-            parameter "command";
             print;
 
         }
@@ -86,10 +85,10 @@ http-post {
         output {
             netbios;	    
 	   
-	        prepend "\nHTTP/1.1 100 Continue\n\n";
+	        # prepend "\nHTTP/1.1 100 Continue\n\n";
 
         #checked to make sure the misspells were misspelled, uh, correctly?
-            append "\"irc_channel\":\"null\",\"irc_nickname\":\"jI87fg\",\"irc_password\":\"K8gtr$4\",\"irc_port\":\"6669\",\"irc_server\":\"Setting+up+IRC+service.\",\"machine_active_time\":\"12\",\"machine_artct\":\"x86\",\"machine_bitcoin_value\":\"0\",\"machine_business_value\":\"0\",\"machine_calls_activity\":\"0\",\"machine_camera_activity\":\"8\",\"machine_country_iso_code\":\"8864\",\"machine_creadit_card_posiblty\":\"0\",\"machine_current_time\":\"10:32:45\",\"machine_facebook_activity\":\"0\",\"machine_gaming_value\":\"0\",\"machine_gmail_avtivity\":\"0\",\"machine_googlepluse_activity\":\"0\",\"machine_instgram_activity\":\"0\",\"machine_ip\":\"10.1.23.146\",\"machine_lat\":\"0\",\"machine_lng\":\"eng\",\"machine_os_type\":\"win\",\"machine_register_date\":\"0222\",\"machine_screenshot\":\"1\"";
+            # append "\"irc_channel\":\"null\",\"irc_nickname\":\"jI87fg\",\"irc_password\":\"K8gtr$4\",\"irc_port\":\"6669\",\"irc_server\":\"Setting+up+IRC+service.\",\"machine_active_time\":\"12\",\"machine_artct\":\"x86\",\"machine_bitcoin_value\":\"0\",\"machine_business_value\":\"0\",\"machine_calls_activity\":\"0\",\"machine_camera_activity\":\"8\",\"machine_country_iso_code\":\"8864\",\"machine_creadit_card_posiblty\":\"0\",\"machine_current_time\":\"10:32:45\",\"machine_facebook_activity\":\"0\",\"machine_gaming_value\":\"0\",\"machine_gmail_avtivity\":\"0\",\"machine_googlepluse_activity\":\"0\",\"machine_instgram_activity\":\"0\",\"machine_ip\":\"10.1.23.146\",\"machine_lat\":\"0\",\"machine_lng\":\"eng\",\"machine_os_type\":\"win\",\"machine_register_date\":\"0222\",\"machine_screenshot\":\"1\"";
             print;
         }
     }

@@ -136,12 +136,12 @@ http-post {
         
         output {
             base64url;
-	    print;
+	        print;
         }
 
         id {
-	    base64url;
-	    prepend "_cfuid=";
+	        base64url;
+	        prepend "_cfuid=";
             header "Cookie";
 
         }
