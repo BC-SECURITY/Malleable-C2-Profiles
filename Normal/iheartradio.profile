@@ -71,30 +71,69 @@ http-get {
 
             base64url;
 
-	    prepend "<!DOCTYPE html>
-    <html lang='en' xmlns:fb='http://ogp.me/ns/fb'>
-    <head>
-      <title>Listen to Hit Nation Radio Live - All of Today's Biggest Hits | iHeartRadio</title>
-      <meta data-react-helmet='true' charset='utf-8'/><meta data-react-helmet='true' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'/><meta data-react-helmet='true' name='mobile-web-app-capable' content='yes'/> <link data-react-helmet='true' rel='shortcut icon' href='/assets/favicon.cf2eff6db48eda72637f3c01d6ce99ae.ico?rev=7.33.1' type='image/ico'/><link data-react-helmet='true' rel='apple-touch-icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='shortcut icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='chrome-webstore-item' href='https://chrome.google.com/webstore/detail/iheartradio/djfamdpdfnbdehpafbeefbpobbohmfnc'/><link data-react-helmet='true' rel='manifest' href='/assets/manifest.828b7817d23e2d62cf3d7e797ae0056f.json?rev=7.33.1'/>
-      <link rel='alternate' href='android-app://com.clearchannel.iheartradio.controller/ihr/goto/live/4422' data-reactid='2'/><link rel='alternate' href='ios-app://290638154/ihr/goto/live/4422' data-reactid='3'/><link rel='search' type='application/opensearchdescription+xml' title='iHeartRadio' href='/assets/opensearch.bb1705850ffcb01dd81ec10d6e177d1c.xml?rev=7.33.1' data-reactid='4'/><link href='https://plus.google.com/+iHeartRadio' rel='author' data-reactid='5'/><link href='https://plus.google.com/+iHeartRadio' rel='publisher' data-reactid='6'/><link rel='canonical' href='https://www.iheart.com/live/hit-nation-4422/' data-reactid='7'/><link rel='image_src' href='https://iscale.iheart.com/catalog/live/4422' data-reactid='8'/><meta name='thumbnail' content='https://iscale.iheart.com/catalog/live/4422' data-reactid='9'/><meta name='description' content='Listen to Hit Nation Live for Free! Hear All of Today&#x27;s Biggest Hits, only on iHeartRadio.' data-reactid='10'/><meta name='keywords' content='Listen,Live,Hit Nation,Digital,NAT,Music,Talk,Radio,Top 40 &amp; Pop,Online,Streaming,Free,iHeartRadio,iHeart' data-reactid='11'/><meta name='twitter:label1' content='Genre' data-reactid='12'/><meta name='twitter:data1' content='Top 40 &amp; Pop' data-reactid='13'/><meta name='twitter:label2' content='Location' data-reactid='14'/><meta name='twitter:data2' content='DIGITAL-NAT' data-reactid='15'/><meta property='fb:app_id' content='121897277851831' data-reactid='16'/> content='https://iscale.iheart.com/catalog/live/4422' data-reactid='21'/>
-      <style class='server-style-loader-element'><href='https://www.iheart.com/live/hit-nation-4422/?autoplayid=";
+            prepend "<!DOCTYPE html>";
+            prepend "<html lang='en' xmlns:fb='http://ogp.me/ns/fb'>";
+            prepend "<head>";
+            prepend "<title>Listen to Hit Nation Radio Live - All of Today's Biggest Hits | iHeartRadio</title>";
+            prepend "<meta data-react-helmet='true' charset='utf-8'/>";
+            prepend "<meta data-react-helmet='true' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'/>";
+            prepend "<meta data-react-helmet='true' name='mobile-web-app-capable' content='yes'/>";
+            prepend "<link data-react-helmet='true' rel='shortcut icon' href='/assets/favicon.cf2eff6db48eda72637f3c01d6ce99ae.ico?rev=7.33.1' type='image/ico'/>";
+            prepend "<link data-react-helmet='true' rel='apple-touch-icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/>";
+            prepend "<link data-react-helmet='true' rel='shortcut icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/>";
+            prepend "<link data-react-helmet='true' rel='chrome-webstore-item' href='https://chrome.google.com/webstore/detail/iheartradio/djfamdpdfnbdehpafbeefbpobbohmfnc'/>";
+            prepend "<link data-react-helmet='true' rel='manifest' href='/assets/manifest.828b7817d23e2d62cf3d7e797ae0056f.json?rev=7.33.1'/>";
+            prepend "<link rel='alternate' href='android-app://com.clearchannel.iheartradio.controller/ihr/goto/live/4422' data-reactid='2'/>";
+            prepend "<link rel='alternate' href='ios-app://290638154/ihr/goto/live/4422' data-reactid='3'/>";
+            prepend "<link rel='search' type='application/opensearchdescription+xml' title='iHeartRadio' href='/assets/opensearch.bb1705850ffcb01dd81ec10d6e177d1c.xml?rev=7.33.1' data-reactid='4'/>";
+            prepend "<link href='https://plus.google.com/+iHeartRadio' rel='author' data-reactid='5'/>";
+            prepend "<link href='https://plus.google.com/+iHeartRadio' rel='publisher' data-reactid='6'/>";
+            prepend "<link rel='canonical' href='https://www.iheart.com/live/hit-nation-4422/' data-reactid='7'/>";
+            prepend "<link rel='image_src' href='https://iscale.iheart.com/catalog/live/4422' data-reactid='8'/>";
+            prepend "<meta name='thumbnail' content='https://iscale.iheart.com/catalog/live/4422' data-reactid='9'/>";
+            prepend "<meta name='description' content='Listen to Hit Nation Live for Free! Hear All of Today&#x27;s Biggest Hits, only on iHeartRadio.' data-reactid='10'/>";
+            prepend "<meta name='keywords' content='Listen,Live,Hit Nation,Digital,NAT,Music,Talk,Radio,Top 40 &amp; Pop,Online,Streaming,Free,iHeartRadio,iHeart' data-reactid='11'/>";
+            prepend "<meta name='twitter:label1' content='Genre' data-reactid='12'/>";
+            prepend "<meta name='twitter:data1' content='Top 40 &amp; Pop' data-reactid='13'/>";
+            prepend "<meta name='twitter:label2' content='Location' data-reactid='14'/>";
+            prepend "<meta name='twitter:data2' content='DIGITAL-NAT' data-reactid='15'/>";
+            prepend "<meta property='fb:app_id' content='121897277851831' data-reactid='16'/>";
+            prepend "content='https://iscale.iheart.com/catalog/live/4422' data-reactid='21'/>";
+            prepend "<style class='server-style-loader-element'>";
+            prepend "<href='https://www.iheart.com/live/hit-nation-4422/?autoplayid=";
 
-
-	    append "<meta property='og:site_name' content='iHeartRadio' data-reactid='22'/><meta property='og:description' content='Listen to Hit Nation Live for Free! Stream Top 40 &amp; Pop songs online from this radio station, only on iHeartRadio.' data-reactid='23'/><meta itemprop='name' content='Listen to Hit Nation Radio Live - All of Today&#x27;s Biggest Hits' data-reactid='24'/><meta  name='twitter:app:name:googleplay' content='iHeartRadio' data-reactid='46'/><meta name='twitter:app:id:googleplay' content='com.clearchannel.iheartradio.controller' data-reactid='47'/><meta property='al:ios:app_store_id' content='290638154' data-reactid='48'/><meta property='al:ios:app_name' content='iHeartRadio' data-reactid='49'/><meta property='al:android:package' content='com.clearchannel.iheartradio.controller' data-reactid='50'/><meta property='al:android:app_name' content='iHeartRadio' data-reactid='51'/>
-      <link rel='stylesheet' type='text/css' href='/assets/web-styles.c28d83ef1f71cb7b9282646a7edecdb0.css?rev=7.33.1'></link>
-</div></div></div><div id='dialog' data-reactid='103'></div><div id='dialog-secondary' data-reactid='104'></div><div data-reactid='105'><!-- react-empty: 106 --></div><!-- react-empty: 107 --><div data-reactid='108'></div><div data-reactid='109'></div><div class='growls no-growls' data-reactid='110'></div><div class='adblock-bait pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links' data-reactid='111'></div></div></div>
-      <div id='jw-wrapper' class='hidden'>
-        <div id='jw-player'></div>
-      </div>
-      <div id='ads-wrapper' class='hidden'>
-        <a id='ads-learn-more' target='_blank'>Learn More</a>
-        <div id='ads-player'></div>
-      </div>
-      <script src=/a/locale/?rel=7.33.1></script>
-      <script src=/assets/vendor.a465f0a08a077b19e744.js?rev=7.33.1></script>
-      <script src=/assets/web.a465f0a08a077b19e744.js?rev=7.33.1></script>
-    </body>
-  </html>";
+            append "<meta property='og:site_name' content='iHeartRadio' data-reactid='22'/>";
+            append "<meta property='og:description' content='Listen to Hit Nation Live for Free! Stream Top 40 &amp; Pop songs online from this radio station, only on iHeartRadio.' data-reactid='23'/>";
+            append "<meta itemprop='name' content='Listen to Hit Nation Radio Live - All of Today&#x27;s Biggest Hits' data-reactid='24'/>";
+            append "<meta  name='twitter:app:name:googleplay' content='iHeartRadio' data-reactid='46'/>";
+            append "<meta name='twitter:app:id:googleplay' content='com.clearchannel.iheartradio.controller' data-reactid='47'/>";
+            append "<meta property='al:ios:app_store_id' content='290638154' data-reactid='48'/>";
+            append "<meta property='al:ios:app_name' content='iHeartRadio' data-reactid='49'/>";
+            append "<meta property='al:android:package' content='com.clearchannel.iheartradio.controller' data-reactid='50'/>";
+            append "<meta property='al:android:app_name' content='iHeartRadio' data-reactid='51'/>";
+            append "<link rel='stylesheet' type='text/css' href='/assets/web-styles.c28d83ef1f71cb7b9282646a7edecdb0.css?rev=7.33.1'></link>";
+            append "</div></div></div>";
+            append "<div id='dialog' data-reactid='103'></div>";
+            append "<div id='dialog-secondary' data-reactid='104'></div>";
+            append "<div data-reactid='105'><!-- react-empty: 106 --></div>";
+            append "<!-- react-empty: 107 -->";
+            append "<div data-reactid='108'></div>";
+            append "<div data-reactid='109'></div>";
+            append "<div class='growls no-growls' data-reactid='110'></div>";
+            append "<div class='adblock-bait pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links' data-reactid='111'></div>";
+            append "</div></div>";
+            append "<div id='jw-wrapper' class='hidden'>";
+            append "<div id='jw-player'></div>";
+            append "</div>";
+            append "<div id='ads-wrapper' class='hidden'>";
+            append "<a id='ads-learn-more' target='_blank'>Learn More</a>";
+            append "<div id='ads-player'></div>";
+            append "</div>";
+            append "<script src=/a/locale/?rel=7.33.1></script>";
+            append "<script src=/assets/vendor.a465f0a08a077b19e744.js?rev=7.33.1></script>";
+            append "<script src=/assets/web.a465f0a08a077b19e744.js?rev=7.33.1></script>";
+            append "</body>";
+            append "</html>";
 
             print;
         }
@@ -153,30 +192,33 @@ http-post {
         output {
             base64;
 
-            prepend "<!DOCTYPE html>
-    <html lang='en' xmlns:fb='http://ogp.me/ns/fb'>
-    <head>
-      <title>Listen to Hit Nation Radio Live - All of Today's Biggest Hits | iHeartRadio</title>
-      <meta data-react-helmet='true' charset='utf-8'/><meta data-react-helmet='true' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'/><meta data-react-helmet='true' name='mobile-web-app-capable' content='yes'/> <link data-react-helmet='true' rel='shortcut icon' href='/assets/favicon.cf2eff6db48eda72637f3c01d6ce99ae.ico?rev=7.33.1' type='image/ico'/><link data-react-helmet='true' rel='apple-touch-icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='shortcut icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='chrome-webstore-item' href='https://chrome.google.com/webstore/detail/iheartradio/djfamdpdfnbdehpafbeefbpobbohmfnc'/><link data-react-helmet='true' rel='manifest' href='/assets/manifest.828b7817d23e2d62cf3d7e797ae0056f.json?rev=7.33.1'/>
-      <link rel='alternate' href='android-app://com.clearchannel.iheartradio.controller/ihr/goto/live/4422' data-reactid='2'/><link rel='alternate' href='ios-app://290638154/ihr/goto/live/4422' data-reactid='3'/><link rel='search' type='application/opensearchdescription+xml' title='iHeartRadio' href='/assets/opensearch.bb1705850ffcb01dd81ec10d6e177d1c.xml?rev=7.33.1' data-reactid='4'/><link href='https://plus.google.com/+iHeartRadio' rel='author' data-reactid='5'/><link href='https://plus.google.com/+iHeartRadio' rel='publisher' data-reactid='6'/><link rel='canonical' href='https://www.iheart.com/live/hit-nation-4422/' data-reactid='7'/><link rel='image_src' href='https://iscale.iheart.com/catalog/live/4422' data-reactid='8'/><meta name='thumbnail' content='https://iscale.iheart.com/catalog/live/4422' data-reactid='9'/><meta name='description' content='Listen to Hit Nation Live for Free! Hear All of Today&#x27;s Biggest Hits, only on iHeartRadio.' data-reactid='10'/><meta name='keywords' content='Listen,Live,Hit Nation,Digital,NAT,Music,Talk,Radio,Top 40 &amp; Pop,Online,Streaming,Free,iHeartRadio,iHeart' data-reactid='11'/><meta name='twitter:label1' content='Genre' data-reactid='12'/><meta name='twitter:data1' content='Top 40 &amp; Pop' data-reactid='13'/><meta name='twitter:label2' content='Location' data-reactid='14'/><meta name='twitter:data2' content='DIGITAL-NAT' data-reactid='15'/><meta property='fb:app_id' content='121897277851831' data-reactid='16'/> content='https://iscale.iheart.com/catalog/live/4422' data-reactid='21'/>
-      <style class='server-style-loader-element'><href='https://www.iheart.com/live/hit-nation-4422/?autoplayid=";
+            prepend "<!DOCTYPE html>";
+            prepend "<html lang='en' xmlns:fb='http://ogp.me/ns/fb'>";
+            prepend "<head>";
+            prepend "<title>Listen to Hit Nation Radio Live - All of Today's Biggest Hits | iHeartRadio</title>";
+            prepend "<meta data-react-helmet='true' charset='utf-8'/><meta data-react-helmet='true' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'/><meta data-react-helmet='true' name='mobile-web-app-capable' content='yes'/>";
+            prepend "<link data-react-helmet='true' rel='shortcut icon' href='/assets/favicon.cf2eff6db48eda72637f3c01d6ce99ae.ico?rev=7.33.1' type='image/ico'/><link data-react-helmet='true' rel='apple-touch-icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='shortcut icon' href='/assets/apple-touch-icon.40395b8a92866d7206175b320b251cd3.png?rev=7.33.1'/><link data-react-helmet='true' rel='chrome-webstore-item' href='https://chrome.google.com/webstore/detail/iheartradio/djfamdpdfnbdehpafbeefbpobbohmfnc'/><link data-react-helmet='true' rel='manifest' href='/assets/manifest.828b7817d23e2d62cf3d7e797ae0056f.json?rev=7.33.1'/>";
+            prepend "<link rel='alternate' href='android-app://com.clearchannel.iheartradio.controller/ihr/goto/live/4422' data-reactid='2'/><link rel='alternate' href='ios-app://290638154/ihr/goto/live/4422' data-reactid='3'/><link rel='search' type='application/opensearchdescription+xml' title='iHeartRadio' href='/assets/opensearch.bb1705850ffcb01dd81ec10d6e177d1c.xml?rev=7.33.1' data-reactid='4'/><link href='https://plus.google.com/+iHeartRadio' rel='author' data-reactid='5'/><link href='https://plus.google.com/+iHeartRadio' rel='publisher' data-reactid='6'/><link rel='canonical' href='https://www.iheart.com/live/hit-nation-4422/' data-reactid='7'/><link rel='image_src' href='https://iscale.iheart.com/catalog/live/4422' data-reactid='8'/>";
+            prepend "<meta name='thumbnail' content='https://iscale.iheart.com/catalog/live/4422' data-reactid='9'/><meta name='description' content='Listen to Hit Nation Live for Free! Hear All of Today&#x27;s Biggest Hits, only on iHeartRadio.' data-reactid='10'/><meta name='keywords' content='Listen,Live,Hit Nation,Digital,NAT,Music,Talk,Radio,Top 40 &amp; Pop,Online,Streaming,Free,iHeartRadio,iHeart' data-reactid='11'/><meta name='twitter:label1' content='Genre' data-reactid='12'/><meta name='twitter:data1' content='Top 40 &amp; Pop' data-reactid='13'/><meta name='twitter:label2' content='Location' data-reactid='14'/><meta name='twitter:data2' content='DIGITAL-NAT' data-reactid='15'/><meta property='fb:app_id' content='121897277851831' data-reactid='16'/>";
+            prepend "content='https://iscale.iheart.com/catalog/live/4422' data-reactid='21'/>";
+            prepend "<style class='server-style-loader-element'>";
+            prepend "<href='https://www.iheart.com/live/hit-nation-4422/?autoplayid=";
 
-
-	    append "<meta property='og:site_name' content='iHeartRadio' data-reactid='22'/><meta property='og:description' content='Listen to Hit Nation Live for Free! Stream Top 40 &amp; Pop songs online from this radio station, only on iHeartRadio.' data-reactid='23'/><meta itemprop='name' content='Listen to Hit Nation Radio Live - All of Today&#x27;s Biggest Hits' data-reactid='24'/><meta  name='twitter:app:name:googleplay' content='iHeartRadio' data-reactid='46'/><meta name='twitter:app:id:googleplay' content='com.clearchannel.iheartradio.controller' data-reactid='47'/><meta property='al:ios:app_store_id' content='290638154' data-reactid='48'/><meta property='al:ios:app_name' content='iHeartRadio' data-reactid='49'/><meta property='al:android:package' content='com.clearchannel.iheartradio.controller' data-reactid='50'/><meta property='al:android:app_name' content='iHeartRadio' data-reactid='51'/>
-      <link rel='stylesheet' type='text/css' href='/assets/web-styles.c28d83ef1f71cb7b9282646a7edecdb0.css?rev=7.33.1'></link>
-</div></div></div><div id='dialog' data-reactid='103'></div><div id='dialog-secondary' data-reactid='104'></div><div data-reactid='105'><!-- react-empty: 106 --></div><!-- react-empty: 107 --><div data-reactid='108'></div><div data-reactid='109'></div><div class='growls no-growls' data-reactid='110'></div><div class='adblock-bait pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links' data-reactid='111'></div></div></div>
-      <div id='jw-wrapper' class='hidden'>
-        <div id='jw-player'></div>
-      </div>
-      <div id='ads-wrapper' class='hidden'>
-        <a id='ads-learn-more' target='_blank'>Learn More</a>
-        <div id='ads-player'></div>
-      </div>
-      <script src=/a/locale/?rel=7.33.1></script>
-      <script src=/assets/vendor.a465f0a08a077b19e744.js?rev=7.33.1></script>
-      <script src=/assets/web.a465f0a08a077b19e744.js?rev=7.33.1></script>
-    </body>
-  </html>";
+            append "<meta property='og:site_name' content='iHeartRadio' data-reactid='22'/><meta property='og:description' content='Listen to Hit Nation Live for Free! Stream Top 40 &amp; Pop songs online from this radio station, only on iHeartRadio.' data-reactid='23'/><meta itemprop='name' content='Listen to Hit Nation Radio Live - All of Today&#x27;s Biggest Hits' data-reactid='24'/><meta  name='twitter:app:name:googleplay' content='iHeartRadio' data-reactid='46'/><meta name='twitter:app:id:googleplay' content='com.clearchannel.iheartradio.controller' data-reactid='47'/><meta property='al:ios:app_store_id' content='290638154' data-reactid='48'/><meta property='al:ios:app_name' content='iHeartRadio' data-reactid='49'/><meta property='al:android:package' content='com.clearchannel.iheartradio.controller' data-reactid='50'/><meta property='al:android:app_name' content='iHeartRadio' data-reactid='51'/>";
+            append "<link rel='stylesheet' type='text/css' href='/assets/web-styles.c28d83ef1f71cb7b9282646a7edecdb0.css?rev=7.33.1'></link>";
+            append "</div></div></div><div id='dialog' data-reactid='103'></div><div id='dialog-secondary' data-reactid='104'></div><div data-reactid='105'><!-- react-empty: 106 --></div><!-- react-empty: 107 --><div data-reactid='108'></div><div data-reactid='109'></div><div class='growls no-growls' data-reactid='110'></div><div class='adblock-bait pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links' data-reactid='111'></div></div></div>";
+            append "<div id='jw-wrapper' class='hidden'>";
+            append "<div id='jw-player'></div>";
+            append "</div>";
+            append "<div id='ads-wrapper' class='hidden'>";
+            append "<a id='ads-learn-more' target='_blank'>Learn More</a>";
+            append "<div id='ads-player'></div>";
+            append "</div>";
+            append "<script src=/a/locale/?rel=7.33.1></script>";
+            append "<script src=/assets/vendor.a465f0a08a077b19e744.js?rev=7.33.1></script>";
+            append "<script src=/assets/web.a465f0a08a077b19e744.js?rev=7.33.1></script>";
+            append "</body>";
+            append "</html>";
 
             print;
         }

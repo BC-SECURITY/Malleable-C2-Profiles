@@ -116,21 +116,19 @@ http-get {
 
             base64;
             
-            prepend "{
-  \"actionOverrides\" : [ ],
-  \"activateable\" : false.
-  \"childRelationship\" : [ {
-    \"cascadeDelete\" : false,
-    \"childObject\" : \"Account\",
-    \"deprecatedAndHidden\" : false,
-    \"field\" : \"";
+            prepend "{\"actionOverrides\" : [ ],";
+            prepend " \"activateable\" : false,";
+            prepend " \"childRelationship\" : [ {";
+            prepend " \"cascadeDelete\" : false,";
+            prepend " \"childObject\" : \"Account\",";
+            prepend " \"deprecatedAndHidden\" : false,";
+            prepend " \"field\" : \"";
             
-            append "\n\"junctionIdListName\" : null,
-     \"junctionReferenceTo\" : [ ],
-     \"relationshipName\" : \"ChildAccounts\",
-     \"restrictedDelete\" : false
-   }";      
-	  
+            append "\n\"junctionIdListName\" : null,";
+            append "     \"junctionReferenceTo\" : [ ],";
+            append "     \"relationshipName\" : \"ChildAccounts\",";
+            append "     \"restrictedDelete\" : false";
+            append "   }";
 
             print;
         }
@@ -191,11 +189,11 @@ http-post {
             prepend "\"sf_id\" : {";
             prepend "\"001B000000XKk9YIAT\", \"true\",\"Bulk API Account4\"";
             prepend "\"001B000000XKk9YIAD\", \"true\",\"Bulk API Account2\"";
-	    prepend "\"sf_Id\", \"sf_Created\",\"Name\"";
-	    
-	    append "}\n";
-	    append "\n\"001B000000XKk9aIAD\", \"true\",\"Bulk API Account3\"";
-	    append "\n\"001B000000XKk9aIAT\", \"true\",\"Bulk API Account4\"";
+            prepend "\"sf_Id\", \"sf_Created\",\"Name\"";
+
+            append "}\n";
+            append "\n\"001B000000XKk9aIAD\", \"true\",\"Bulk API Account3\"";
+            append "\n\"001B000000XKk9aIAT\", \"true\",\"Bulk API Account4\"";
 
             print;
         }

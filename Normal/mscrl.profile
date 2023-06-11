@@ -116,70 +116,60 @@ http-get {
 
             base64;
             
-            prepend "<!DOCTYPE html>
-<html>
+            prepend "</body>";
+            prepend "</html>";
+            prepend "<li>Thumbprint:";
+            prepend "<li>CA Certificate: <a href=\"http://www.microsoft.com/pki/mscorp/Microsoft%20IT%20TLS%20CA%201.crt\">Microsoft IT TLS CA 1.crt</a></li>";
+            prepend "<ul>";
+            prepend "<h3>Microsoft IT TLS CA 1</h3>";
+            prepend "<h2>Certificates and CRLs</h2>";
+            prepend "<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=248681\">Microsoft Privacy Policy</a></li>";
+            prepend "<ul>";
+            prepend "<h3>Privacy Policy</h3>";
+            prepend "<li>Previous Version: <a href=\"Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019/Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019.htm\">Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019</a></a></li>";
+            prepend "<li>Current Version: <a href=\"Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020/Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020.htm\">Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020</a></li>";
+            prepend "<ul>";
+            prepend "<h3>Microsoft IT PKI (SSL) Certificate Policy (CP) and Certification Practice Statement (CPS)</h3>";
+            prepend "<h2>Policy</h2>";
+            prepend "<h1>PKI Repository</h1>";
+            prepend "<table style=\"width:100%\">";
+            prepend "<td>";
+            prepend "<a href=\"https://www.cpacanada.ca/webtrustseal?sealid=10260\">";
+            prepend "<img src=\"default_files/WebTrust-For-BR-SSL_BDO.JPG\" alt=\"Baseline Requirements Seal\"/>";
+            prepend "</a>";
+            prepend "</td>";
+            prepend "<td>";
+            prepend "<a href=\"https://www.cpacanada.ca/webtrustseal?sealid=10259\">";
+            prepend "<img src=\"default_files/WebTrust-For-CA_BDO.JPG\" alt=\"WebTrust Seal\"/>";
+            prepend "</a>";
+            prepend "</td>";
+            prepend "<td><img src=\"default_files/image001.jpg\" alt=\"Microsoft Logo\"/></td>";
+            prepend "<tr>";
+            prepend "</table>";
+            prepend "<body>";
+            prepend "<head>";
+            prepend "<meta charset=\"UTF-8\">";
+            prepend "<title>PKI Repository (SSL) - Microsoft IT</title>";
+            prepend "</head>";
+            prepend "<html>";
+            prepend "<!DOCTYPE html>";
 
-<head>
-  <title>PKI Repository (SSL) - Microsoft IT</title>
-  <meta charset=\"UTF-8\">
-</head>
-
-<body>
-<table style=\"width:100%\">
-  <tr>
-    <td><img src=\"default_files/image001.jpg\" alt=\"Microsoft Logo\"/></td>
-    <td>
-	<a href=\"https://www.cpacanada.ca/webtrustseal?sealid=10259\">
-		<img src=\"default_files/WebTrust-For-CA_BDO.JPG\" alt=\"WebTrust Seal\"/>
-	</a>
-    </td>
-    <td>
-	<a href=\"https://www.cpacanada.ca/webtrustseal?sealid=10260\">
-		<img src=\"default_files/WebTrust-For-BR-SSL_BDO.JPG\" alt=\"Baseline Requirements Seal\"/>
-	</a>
-    </td>
-   </tr>
-</table> 
-<h1>PKI Repository</h1>
-
-<h2>Policy</h2>
-
-<h3>Microsoft IT PKI (SSL) Certificate Policy (CP) and Certification Practice Statement (CPS)</h3>
-<ul>
-	<li>Current Version: <a href=\"Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020/Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020.htm\">Microsoft DSRE PKI CP-CPS for TLS Ver 2.4 March 2020</a></li>
-	<li>Previous Version: <a href=\"Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019/Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019.htm\">Microsoft DSRE PKI CP-CPS for TLS Ver 2.3 June 2019</a></a></li>
-</ul>
-
-<h3>Privacy Policy</h3>
-<ul>
-	<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=248681\">Microsoft Privacy Policy</a></li>
-</ul>
-
-<h2>Certificates and CRLs</h2>
-
-<h3>Microsoft IT TLS CA 1</h3>
-<ul>
-
-	<li>CA Certificate: <a href=\"http://www.microsoft.com/pki/mscorp/Microsoft%20IT%20TLS%20CA%201.crt\">Microsoft IT TLS CA 1.crt</a></li>
-	<li>Thumbprint:";
-            
-            append "</li>
-	<li>Authority Key Identifier: e5 9d 59 30 82 47 58 cc ac fa 08 54 36 86 7b 3a b5 04 4d f0</li>
-</ul>
-
-<h2>FINAL REPORTS</h2>
-
-<ul>
-	<li><a href=\"June 2019 Final Reports/Microsoft DSRE WTBR Indp Acct Report and Mgmt Assertion Aug 2019 - FINAL.pdf\">Baseline Requirements - Jun 2019</a></li>
-	<li><a href=\"June 2019 Final Reports/Microsoft DSRE WTCA Indp Acct Report and Mgmt Assertion Aug 2019 - FINAL.pdf\">WebTrust - Jun 2019</a></li>
-	<li><a href=\"January 2019 Final Reports/Microsoft CSEO 2019 WTBR Indp Auditor Opinion and Mgmt Assertion April 2019 - FINAL.pdf\">Baseline Requirements - Jan 2019</a></li>
-	<li><a href=\"January 2019 Final Reports/Microsoft CSEO 2019 WTCA Indp Auditor Opinion and Mgmt Assertion April 2019 - FINAL.pdf\">WebTrust - Jan 2019</a></li>
-</ul>
-
-</body>
-
-</html>";      
-	  
+            append "<!DOCTYPE html>";
+            append "<html>";
+            append "<body>";
+            append "<ul>";
+            append "<li><a href=\"January 2019 Final Reports/Microsoft CSEO 2019 WTCA Indp Auditor Opinion and Mgmt Assertion April 2019 - FINAL.pdf\">WebTrust - Jan 2019</a></li>";
+            append "<li><a href=\"January 2019 Final Reports/Microsoft CSEO 2019 WTBR Indp Auditor Opinion and Mgmt Assertion April 2019 - FINAL.pdf\">Baseline Requirements - Jan 2019</a></li>";
+            append "<li><a href=\"June 2019 Final Reports/Microsoft DSRE WTCA Indp Acct Report and Mgmt Assertion Aug 2019 - FINAL.pdf\">WebTrust - Jun 2019</a></li>";
+            append "<li><a href=\"June 2019 Final Reports/Microsoft DSRE WTBR Indp Acct Report and Mgmt Assertion Aug 2019 - FINAL.pdf\">Baseline Requirements - Jun 2019</a></li>";
+            append "</ul>";
+            append "<h2>FINAL REPORTS</h2>";
+            append "<ul>";
+            append "<li>Authority Key Identifier: e5 9d 59 30 82 47 58 cc ac fa 08 54 36 86 7b 3a b5 04 4d f0</li>";
+            append "</li>";
+            append "</ul>";
+            append "</body>";
+            append "</html>";
 
             print;
         }

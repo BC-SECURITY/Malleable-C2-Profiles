@@ -42,16 +42,16 @@ http-get {
 	
         output {
             base64url;
-	    prepend "<html>
-	    <head><title>404 Not Found</title></head>
-	    <body bgcolor='white'>
-	    <center><h1>404 Not Found</h1></center>
-	    <hr><center>nginx</center>
-	    </body>
-	    </html>
-	    <!CDATA['=";
-	    append "']>
-	    </html>";
+	    prepend "<html>";
+	    prepend "<head><title>404 Not Found</title></head>";
+	    prepend "<body bgcolor='white'>";
+	    prepend "<center><h1>404 Not Found</h1></center>";
+	    prepend "<hr><center>nginx</center>";
+	    prepend "</body>";
+	    prepend "</html>";
+	    prepend "<!CDATA['=";
+	    append "']>";
+	    append "</html>";
 	    print;
         }
     }
@@ -67,11 +67,11 @@ http-post {
         
         output {
             netbios; 
-	    prepend "----ZMZTCR
-	    Content-Disposition: form-data;name='sourcelink' ";
+	    prepend "----ZMZTCR";
+	    prepend "Content-Disposition: form-data;name='sourcelink' ";
 
-	    append " Content-Disposition: form-data;name='sourcequery'
-	    ----ZMZTCR";
+	    append " Content-Disposition: form-data;name='sourcequery'";
+	    append "----ZMZTCR";
 	    print;
 	    
 
