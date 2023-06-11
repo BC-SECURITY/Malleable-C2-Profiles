@@ -43,6 +43,7 @@ http-post {
 		header "Content-Type" "application/octet-stream";
 
 		id {
+		    base64url;
 			uri-append;
 		}
 

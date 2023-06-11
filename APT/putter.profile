@@ -44,6 +44,7 @@ http-post {
 		header "User-Agent" "Mozilla/4.0 (Compatible; MSIE 6.0;Windows NT 5.1)";
 
 		id {
+		    base64url;
 			append "/default.asp";
 			uri-append;
 		}

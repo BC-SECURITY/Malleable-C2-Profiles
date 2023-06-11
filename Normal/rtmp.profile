@@ -51,6 +51,7 @@ http-post {
         header "Content-Type" "application/x-fcs";
 
         id {
+            base64url;
             uri-append;
         }
 
