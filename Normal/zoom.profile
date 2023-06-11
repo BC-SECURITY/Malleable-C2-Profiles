@@ -116,52 +116,51 @@ http-get {
         output {
 
             base64;
-            
-            prepend "<!DOCTYPE html>
-<html xmlns:fb=\"http://ogp.me/ns/fb#\">
-<head prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#\">
-<meta charset=\"utf-8\">
-<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,Chrome=1\">
-<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1.0\">
-<title>Launch Meeting - Zoom</title>
-<meta name=\"keywords\" content=\"zoom, zoom.us, video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share, mobility, mobile collaboration, desktop share, video collaboration, group messaging\">
-<meta name=\"description\" content=\"Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a publicly traded company headquartered in San Jose, CA.\">
-<meta name=\"robots\" content=\"noindex,nofollow\">
-<meta property=\"og:type\" content=\"activity\">
-<meta property=\"og:title\" content=\"Join our Cloud HD Video Meeting\">
-<meta property=\"og:description\" content=\"Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a publicly traded company headquartered in San Jose, CA.\">
-<meta property=\"og:url\" content=\"https://us04web.zoom.us/s/74263599745\">
-<meta property=\"og:site_name\" content=\"Zoom Video\">
-<meta property=\"fb:app_id\" content=\"113289095462482\">
-<meta property=\"twitter:account_id\" content=\"522701657\">
-<script src=\"/lres\"></script>
-<link rel=\"shortcut icon\" href=\"/zoom.ico\">
-</head>
-<body>
-<script>
-window.launchBase64 = ";
+
+            prepend "<!DOCTYPE html>";
+            prepend "<html xmlns:fb=\"http://ogp.me/ns/fb#\">";
+            prepend "<head prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#\">";
+            prepend "<meta charset=\"utf-8\">";
+            prepend "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,Chrome=1\">";
+            prepend "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1.0\">";
+            prepend "<title>Launch Meeting - Zoom</title>";
+            prepend "<meta name=\"keywords\" content=\"zoom, zoom.us, video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share, mobility, mobile collaboration, desktop share, video collaboration, group messaging\">";
+            prepend "<meta name=\"description\" content=\"Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a publicly traded company headquartered in San Jose, CA.\">";
+            prepend "<meta name=\"robots\" content=\"noindex,nofollow\">";
+            prepend "<meta property=\"og:type\" content=\"activity\">";
+            prepend "<meta property=\"og:title\" content=\"Join our Cloud HD Video Meeting\">";
+            prepend "<meta property=\"og:description\" content=\"Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a publicly traded company headquartered in San Jose, CA.\">";
+            prepend "<meta property=\"og:url\" content=\"https://us04web.zoom.us/s/74263599745\">";
+            prepend "<meta property=\"og:site_name\" content=\"Zoom Video\">";
+            prepend "<meta property=\"fb:app_id\" content=\"113289095462482\">";
+            prepend "<meta property=\"twitter:account_id\" content=\"522701657\">";
+            prepend "<script src=\"/lres\"></script>";
+            prepend "<link rel=\"shortcut icon\" href=\"/zoom.ico\">";
+            prepend "</head>";
+            prepend "<body>";
+            prepend "<script>";
+            prepend "window.launchBase64 = ";
             
             append "\"\n";
-            append "(function () {
-var js = (JSON.parse(\"{\"js\":[\"launch-meeting/meeting.ed15e165e6bc2c070974.js\"],\"css\":[]}\").js || [])[0];
-if (js) {
-var domains = window.zoomDomains[0];
-loadJS(domains[0], js);
-var next = domains[1];
-next && setTimeout(function() { !document.getElementById('zoom-ui-frame') && loadJS(next, js); }, 5000);
-}
-function loadJS(domain, url) {
-var el = document.createElement('script');
-var src = domain + \"/fe-static/\" + url;
-el.setAttribute(\"src\", src);
-document.body.appendChild(el);
-}
-})();
-</script>\n";
-            append "  <script id=\"ze-snippet\" src=\"https://static.zdassets.com/ekr/snippet.js?key=f022518e-a528-43eb-b7d9-6af79e1de3db\"> </script>
-</body>
-</html>";      
-	  
+            append "(function () {";
+            append "var js = (JSON.parse(\"{\"js\":[\"launch-meeting/meeting.ed15e165e6bc2c070974.js\"],\"css\":[]}\").js || [])[0];";
+            append "if (js) {";
+            append "var domains = window.zoomDomains[0];";
+            append "loadJS(domains[0], js);";
+            append "var next = domains[1];";
+            append "next && setTimeout(function() { !document.getElementById('zoom-ui-frame') && loadJS(next, js); }, 5000);";
+            append "}";
+            append "function loadJS(domain, url) {";
+            append "var el = document.createElement('script');";
+            append "var src = domain + \"/fe-static/\" + url;";
+            append "el.setAttribute(\"src\", src);";
+            append "document.body.appendChild(el);";
+            append "}";
+            append "})();";
+            append "</script>\n";
+            append "  <script id=\"ze-snippet\" src=\"https://static.zdassets.com/ekr/snippet.js?key=f022518e-a528-43eb-b7d9-6af79e1de3db\"> </script>";
+            append "</body>";
+            append "</html>";
 
             print;
         }

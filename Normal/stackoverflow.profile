@@ -64,25 +64,25 @@ http-get {
         output {
 
             base64url;
-	    prepend "\n";
-	    prepend "<link rel=\"shortcut icon\" href=\"https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=";
-	    prepend "<title>c# 4.0 - C# Preprocessor Directives (#if and #endif) not working. Compilation error - Stack Overflow</title>";
-	    prepend "<head>\n";
-	    prepend "<html itemscope itemtype=\"http://schema.org/QAPage\" class=\"html__responsive\">\n";
-	    prepend "<!DOCTYPE html>\n\n";
-	    append "<h2 data-answercount=\"3\">
-                                3 Answers
-                                <span style=\"display:none;\" itemprop=\"answerCount\">3</span>
-                        </h2>
-                        <div>
+            prepend "\n";
+            prepend "<link rel=\"shortcut icon\" href=\"https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=";
+            prepend "<title>c# 4.0 - C# Preprocessor Directives (#if and #endif) not working. Compilation error - Stack Overflow</title>";
+            prepend "<head>\n";
+            prepend "<html itemscope itemtype=\"http://schema.org/QAPage\" class=\"html__responsive\">\n";
+            prepend "<!DOCTYPE html>\n\n";
 
-<div id=\"tabs\">
-        <a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=active#tab-top\" data-nav-xhref=\"\" title=\"Answers with the latest activity first\" data-value=\"active\" data-shortcut=\"A\">
-            active</a>
-        <a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=oldest#tab-top\" data-nav-xhref=\"\" title=\"Answers in the order they were provided\" data-value=\"oldest\" data-shortcut=\"O\">
-            oldest</a>
-        <a class=\"youarehere is-selected \" href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=votes#tab-top\" data-nav-xhref=\"\" title=\"Answers with the highest score first\" data-value=\"votes\" data-shortcut=\"V\">
-            votes</a>";
+            append "<h2 data-answercount=\"3\">";
+            append "3 Answers";
+            append "<span style=\"display:none;\" itemprop=\"answerCount\">3</span>";
+            append "</h2>";
+            append "<div>";
+            append "<div id=\"tabs\">";
+            append "<a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=active#tab-top\" data-nav-xhref=\"\" title=\"Answers with the latest activity first\" data-value=\"active\" data-shortcut=\"A\">";
+            append "active</a>";
+            append "<a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=oldest#tab-top\" data-nav-xhref=\"\" title=\"Answers in the order they were provided\" data-value=\"oldest\" data-shortcut=\"O\">";
+            append "oldest</a>";
+            append "<a class=\"youarehere is-selected \" href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=votes#tab-top\" data-nav-xhref=\"\" title=\"Answers with the highest score first\" data-value=\"votes\" data-shortcut=\"V\">";
+            append "votes</a>";
 
             print;
         }
@@ -125,38 +125,39 @@ http-post {
     server {
 
         header "Cache-control" "private";
-	header "Content-Type" "text/html; charset=utf-8";
-	header "X-Frame-Origins" "SAMEORIGIN";
-	header "Strict-Transport-Security" "max-age=15552000";
-	header "Via" "1.1 varnish";
-	header "Age" "0";
-	header "Connection" "close";
-	header "X-Cache" "MISS";
-	header "X-Cache-Hits" "0";
-	header "Vary" "Fastly-SSL";
+        header "Content-Type" "text/html; charset=utf-8";
+        header "X-Frame-Origins" "SAMEORIGIN";
+        header "Strict-Transport-Security" "max-age=15552000";
+        header "Via" "1.1 varnish";
+        header "Age" "0";
+        header "Connection" "close";
+        header "X-Cache" "MISS";
+        header "X-Cache-Hits" "0";
+        header "Vary" "Fastly-SSL";
 
 
         output {
             base64url;
-	    prepend "\n";
-	    prepend "<link rel=\"shortcut icon\" href=\"https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=";
-	    prepend "<title>c# 4.0 - C# Preprocessor Directives (#if and #endif) not working. Compilation error - Stack Overflow</title>";
-	    prepend "<head>\n";
-	    prepend "<html itemscope itemtype=\"http://schema.org/QAPage\" class=\"html__responsive\">\n";
-	    prepend "<!DOCTYPE html>\n\n";
-	    append "<h2 data-answercount=\"3\">
-                                3 Answers
-                                <span style=\"display:none;\" itemprop=\"answerCount\">3</span>
-                        </h2>
-                        <div>
 
-<div id=\"tabs\">
-        <a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=active#tab-top\" data-nav-xhref=\"\" title=\"Answers with the latest activity first\" data-value=\"active\" data-shortcut=\"A\">
-            active</a>
-        <a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=oldest#tab-top\" data-nav-xhref=\"\" title=\"Answers in the order they were provided\" data-value=\"oldest\" data-shortcut=\"O\">
-            oldest</a>
-        <a class=\"youarehere is-selected \" href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=votes#tab-top\" data-nav-xhref=\"\" title=\"Answers with the highest score first\" data-value=\"votes\" data-shortcut=\"V\">
-            votes</a>";
+            prepend "\n";
+            prepend "<link rel=\"shortcut icon\" href=\"https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=";
+            prepend "<title>c# 4.0 - C# Preprocessor Directives (#if and #endif) not working. Compilation error - Stack Overflow</title>";
+            prepend "<head>\n";
+            prepend "<html itemscope itemtype=\"http://schema.org/QAPage\" class=\"html__responsive\">\n";
+            prepend "<!DOCTYPE html>\n\n";
+
+            append "<h2 data-answercount=\"3\">";
+            append "3 Answers";
+            append "<span style=\"display:none;\" itemprop=\"answerCount\">3</span>";
+            append "</h2>";
+            append "<div>";
+            append "<div id=\"tabs\">";
+            append "<a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=active#tab-top\" data-nav-xhref=\"\" title=\"Answers with the latest activity first\" data-value=\"active\" data-shortcut=\"A\">";
+            append "active</a>";
+            append "<a href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=oldest#tab-top\" data-nav-xhref=\"\" title=\"Answers in the order they were provided\" data-value=\"oldest\" data-shortcut=\"O\">";
+            append "oldest</a>";
+            append "<a class=\"youarehere is-selected \" href=\"/questions/32251816/c-sharp-preprocessor-directives-if-and-endif-not-working-compilation-error?answertab=votes#tab-top\" data-nav-xhref=\"\" title=\"Answers with the highest score first\" data-value=\"votes\" data-shortcut=\"V\">";
+            append "votes</a>";
 
             print;
         }
